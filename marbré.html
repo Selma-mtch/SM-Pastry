@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>  Marbré </title>
+		<link rel="stylesheet" type = "text/css" href="/css/style.css" />
+	</head>
+
+    <body>
+		<header id="navbar">
+			<div id="logo">
+				<img src="../img/logo.png" alt="Logo SM_Pastry">
+			</div>
+			<nav id="nav-links">
+				<a href="menue.html"> Menu </a>
+				<a href="toutes tartes.html"> Recettes tartes </a>
+				<a href="pour le café.html"> Recettes pour le café </a>
+				<a href="petit déjeuner.html"> Recettes petit déjeuner </a>
+				<a href="au chocolat.html"> Recettes au chcocolat </a>
+				<a href="anniversaire.html">  Recettes anniversaire </a>
+				<a href="entremets.html"> Recettes entremets </a>
+				<a href="hors oeuvre.html"> Hors d'oeuvre </a>
+			</nav>
+			<div class="menuButton" onclick="toggleMenu()">☰</div>
+		</header>
+
+		<div id="pagesMenu">
+			<nav>
+				<a href="menue.html"> Menu </a>
+				<a href="toutes tartes.html"> Recettes tartes </a>
+				<a href="pour le café.html"> Recettes pour le café </a>
+				<a href="petit déjeuner.html"> Recettes petit déjeuner </a>
+				<a href="au chocolat.html"> Recettes au chcocolat </a>
+				<a href="anniversaire.html">  Recettes anniversaire </a>
+				<a href="entremets.html"> Recettes entremets </a>
+				<a href="hors oeuvre.html"> Hors d'oeuvre </a>
+			</nav>
+		</div>
+
+        <main id="content">
+            <h1> Marbré </h1>
+		
+            <h2>Ce gâteau est composé d'une pâte à la vanille et d'une pâte au chocolat. </br>
+		Comme son nom l'indique, le gâteau est composé d'une alternance de traits de couleur claire et sombre </br>
+		    grâce à une alternance des deux pâtes.</h2>
+
+	            <table>
+	            <td> Préparation: 20 min </td>
+	            <td> Cuisson: 40 min</td>
+	            <td> Quantité: 8 personnes  </td>
+	            </table>
+
+        	<h2> Liste des ingrédients: </h2>
+
+	        <div id='ingrédients'>
+		        <li>125 g de beurre fondu</li>
+		        <li>120 g de sucre en poudre </li>
+		        <li>3 œufs </li>
+		        <li>200 g de farine </li>
+		        <li>1 c.à.c. de levure chimique </li>
+		        <li>6 c.à.s. de lait </li>
+		        <li>1 c.à.s. de sucre vanillé</li>
+		        <li>30 g de chocolat pâtissier fondu</li>
+	        </div>
+
+        	<h2>Préparation:</h2>
+
+	        <div class='instructions'>
+		        <ol>
+			        <li>Mélanger le beurre fondu et le sucre en poudre.</li>
+			        <li>Casser les œufs en séparant les blancs des jaunes.</li>
+			        <li>Ajouter les jaunes à la préparation, ainsi que la farine, la levure chimique et le lait.</li>
+			        <li>Monter les blancs en neige et les incorporer délicatement au mélange.</li>
+			        <li> Séparer la pâte en deux moitiés</li>
+			        <li>Aromatiser l'une avec le sucre vanillé (et/ou de l'arôme de vanille) et l'autre avec le chocolat fondu dans un peu de lait.</li>
+			        <li>Graisser un moule à cake, puis verser les deux préparations l'une après l'autre.</li>
+				<li>Pour un effet marbré accentué, utiliser un ustensile fin (type pic à brochette) et effectuer de légers mouvements en zigzag.</li>
+			        <li>Enfourner pendant 40 min à 170°C.</li>
+		    	</ol>
+		</div>
+	
+		<h2>Astuce:</h2>
+		<div class='astuces'>  
+			<li> Pour obtenir une belle craquelure sur le dessus du gâteau : déposer une fine ligne de beurre mou sur le dessus du gâteau.</li>
+		</div>
+
+		<div class="container">
+		    <img src= "/img/marbré_entier.jpg" alt='Image marbré entier' class='img'/> 
+		    <img src= "/img/marbré.jpg" alt='Image découpe marbré' class='img'/>     
+		</div>
+	</main> 
+	    
+	<h2>
+		<a href="/rpdf/marbré.pdf"> La recette au format PDF </a>
+        	</br>
+        	Si tu veux une recette de choux à la crème, c'est par ici -> <a href="choux creme.html"> Ma recette de choux à la crème </a> 
+	</h2>
+	</body>
+	
+	<script>
+		function toggleMenu() {
+			var menu = document.getElementById('pagesMenu');
+			if (menu.style.display === 'block') {
+			  menu.style.display = 'none';
+			} else {
+			  menu.style.display = 'block';
+			}
+		  }
+	</script>
+</html>

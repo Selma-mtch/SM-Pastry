@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Pancakes</title>
+		<link rel="stylesheet" type = "text/css" href="/css/style.css" />
+	</head>
+
+	<body>
+		<header id="navbar">
+			<div id="logo">
+				<img src="../img/logo.png" alt="Logo SM_Pastry">
+			</div>
+			<nav>
+				<a href="menue.html"> Menu </a>
+				<a href="toutes tartes.html"> Recettes tartes </a>
+				<a href="pour le café.html"> Recettes pour le café </a>
+				<a href="petit déjeuner.html"> Recettes petit déjeuner </a>
+				<a href="au chocolat.html"> Recettes au chcocolat </a>
+				<a href="anniversaire.html">  Recettes anniversaire </a>
+				<a href="entremets.html"> Recettes entremets </a>
+				<a href="hors oeuvre.html"> Hors d'oeuvre </a>
+			</nav>
+			<div class="menuButton" onclick="toggleMenu()">☰</div>
+		</header>
+
+		<div id="pagesMenu">
+			<nav>
+				<a href="menue.html"> Menu </a>
+				<a href="toutes tartes.html"> Recettes tartes </a>
+				<a href="pour le café.html"> Recettes pour le café </a>
+				<a href="petit déjeuner.html"> Recettes petit déjeuner </a>
+				<a href="au chocolat.html"> Recettes au chcocolat </a>
+				<a href="anniversaire.html">  Recettes anniversaire </a>
+				<a href="entremets.html"> Recettes entremets </a>
+				<a href="hors oeuvre.html"> Hors d'oeuvre </a>
+			</nav>
+		</div>
+
+		<main id="content">
+
+			<h1> Pancakes </h1>
+
+			<h2> Ingrédients: </h2>
+			<div id='ingrédients'>
+				<li>2 œufs </li>
+				<li>1 verre de lait </li>
+				<li>1/2 verre d'huile </li>
+				<li>2 sachets de sucre vanillé </li>
+				<li>1 càs de sucre en poudre  </li>
+				<li>1 sachet de levures chimiques </li>
+				<li>8 càs de farine environ</li>
+			</div>
+
+			<h2> Préparation: </h2>
+
+			<div class="instructions">
+				<ol>
+					<li> Mélanger les œufs, le lait et l'huile. </li>
+					<li> Ajouter le sucre. </li>
+					<li> Ajouter la farine petit à petit et mélanger énergiquement. </li>
+					<li> Ajouter la levure. </li>
+					<li> Faire cuire à feu très très doux environ 5 min de chaque côté. </li> 
+				</ol>
+			</div>
+
+			<div class="container">
+				<img src= "/img/pancakes.jpg" alt='Image pancakes' class='img'/> 
+			</div>
+			
+			<h1>Plus qu'à déguster !!!! </h1>
+
+			<h2> <a href="/rpdf/pancakes.pdf"> La recette au format PDF </a> </h2>
+		</main>
+	</body>
+	<script>
+	function toggleMenu() {
+		var menu = document.getElementById('pagesMenu');
+		if (menu.style.display === 'block') {
+		  menu.style.display = 'none';
+		} else {
+		  menu.style.display = 'block';
+		}
+	  }
+	</script>
+</html>

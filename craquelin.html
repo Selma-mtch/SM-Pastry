@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>  Craquelin </title>
+		<link rel="stylesheet" type = "text/css" href="/css/style.css" />
+	</head>
+
+	<body>
+		<header id="navbar">
+			<div id="logo">
+				<img src="../img/logo.png" alt="Logo SM_Pastry">
+			</div>
+			<nav>
+				<a href="menue.html"> Menu </a>
+				<a href="toutes tartes.html"> Recettes tartes </a>
+				<a href="pour le café.html"> Recette pour le café </a>
+				<a href="petit déjeuner.html"> Recettes petit déjeuner </a>
+				<a href="au chocolat.html"> Recettes au chcocolat </a>
+				<a href="anniversaire.html">  Recette anniversaire </a>
+				<a href="entremets.html"> Recette entremets </a>
+				<a href="hors oeuvre.html"> Hors d'oeuvre </a>
+			</nav>
+			<div class="menuButton" onclick="toggleMenu()">☰</div>
+		</header>
+		<div id="pagesMenu">
+			<nav>
+				<a href="menue.html"> Menu </a>
+				<a href="toutes tartes.html"> Recettes tartes </a>
+				<a href="pour le café.html"> Recette pour le café </a>
+				<a href="petit déjeuner.html"> Recettes petit déjeuner </a>
+				<a href="au chocolat.html"> Recettes au chcocolat </a>
+				<a href="anniversaire.html">  Recette anniversaire </a>
+				<a href="entremets.html"> Recette entremets </a>
+				<a href="hors oeuvre.html"> Hors d'oeuvre </a>
+			</nav>
+		</div>
+
+		<main id="content">
+			<h1> Craquelin </h1>
+
+			<table>
+				<td> Temps de préparation: 45 min </td>
+				<td> Cuisson: 30 min</td>
+				<td> Quantité: ~25 choux </td>
+			</table>
+
+			<h2> Ingrédients: </h2>
+
+			<div id='ingrédients'>
+				<li>84g de beurre demi-sel</li>
+				<li>105g de farine</li>
+				<li>105g de sucre cassonade</li>
+			</div>
+
+			<h2> Préparation: </h2>
+
+			<div class='instructions'>
+				<ol>
+					<li> Mélanger le beurre, la cassonade et la farine jusqu’à l’obtention d’une pâte homogène. </li>
+					<li>Former une boule avec la pâte et la disposer sur une feuille de papier cuisson. Recouvrir d’une seconde feuille de papier cuisson et étaler la pâte (sur 2 mm d’épaisseur environ).</li>
+					<li>Réserver au frais.</li>
+					<li>Préparation des choux.</li>
+					<li>Préchauffer le four à 250°C (thermostat 8-9).</li>
+					<li>Une fois que vous avez fini la pâte à choux et que vous les avez poché, sortez le craquelin du réfrigérateur et découper des cercles de même diamètre (ou plus petit) que les choux. Disposer un cercle de craquelin sur chaque chou. </li>
+					<li> Éteindre le four et enfourner immédiatement pendant 10 min. Rallumer le four à 160°C (thermostat 5) et laisser cuire 20 min.</li>
+				</ol>
+			</div>
+
+			<div class="container">
+				<img  src= "/img/choux creme.jpg" alt='Image choux avec craquelin' class="img"/>
+			</div>
+
+			<h2>
+			<a href="/rpdf/craquelin.pdf"> La recette au format PDF </a>
+			</h2>
+
+		</main>
+	</body>
+	<script>
+	function toggleMenu() {
+		var menu = document.getElementById('pagesMenu');
+		if (menu.style.display === 'block') {
+		  menu.style.display = 'none';
+		} else {
+		  menu.style.display = 'block';
+		}
+	  }
+	</script>
+</html>

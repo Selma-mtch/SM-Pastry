@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>  Letter Cake </title>
+		<link rel="stylesheet" type = "text/css" href="/css/style.css" />
+	</head>
+
+    <body>
+		<header id="navbar">
+			<div id="logo">
+				<img src="../img/logo.png" alt="Logo SM_Pastry">
+			</div>
+			<nav>
+				<a href="menue.html"> Menu </a>
+				<a href="toutes tartes.html"> Recettes tartes </a>
+				<td> <a href="pour le café.html"> Recettes pour le café </a> </td>
+				<a href="petit déjeuner.html"> Recettes petit déjeuner </a>
+				<a href="au chocolat.html"> Recettes au chcocolat </a>
+				<a href="anniversaire.html">  Recettes anniversaire </a>
+				<a href="entremets.html"> Recettes entremets </a>
+				<a href="hors oeuvre.html"> Hors d'oeuvre </a>
+			</nav>
+			<div class="menuButton" onclick="toggleMenu()">☰</div>
+		</header>
+
+	    <div id="pagesMenu">
+			<nav>
+				<a href="menue.html"> Menu </a>
+				<a href="toutes tartes.html"> Recettes tartes </a>
+				<a href="pour le café.html"> Recettes pour le café </a>
+				<a href="petit déjeuner.html"> Recettes petit déjeuner </a>
+				<a href="au chocolat.html"> Recettes au chcocolat </a>
+				<a href="anniversaire.html">  Recettes anniversaire </a>
+				<a href="entremets.html"> Recettes entremets </a>
+				<a href="hors oeuvre.html"> Hors d'oeuvre </a>
+			</nav>
+	</div>
+
+		<main id="content">   
+            <h1> Letter-Number Cake </h1>
+            
+            <h2> Ingrédients pâte sucré:</h2>
+
+            <div id='ingrédients'>
+                <li> 120 g de beurre mou </li>
+                <li> 80 g de sucre glace </li>
+                <li> 25 g de poudre d’amande </li>
+                <li> Une pincée de sel </li>
+                <li> 200 g de farine </li>
+                <li> 1 œuf </li>
+            </div>
+            
+            <h2> Préparation pâte sucré: </h2>
+
+            <div class='instructions'>
+                <ol>
+                    <li> Dans un saladier, déposer le beurre mou, tamiser le sucre glace au-dessus, ajouter la poudre d’amandes et le sel. </li>
+                    <li> Mélanger jusqu’à l’obtention d’une pâte homogène. </li>
+                    <li> Incorporer l’œuf et la farine. </li>
+                    <li> Mélanger sans trop travailler la pâte. </li> 
+                    <li> Réserver la pâte au frais 2 heures. </li>
+                    <li> Faire la ganache. </li>
+                    <li> La pâte reposée, l'étaler sur le plan de travail et la découper à l’aide du patron (2 fois pour les 2 cotés). </li>
+                    <li> Metter à cuire à 180°C pendant 10 minutes. </li>
+                </ol>
+            </div>
+
+            <h2> Ingrédients ganache chocolat blanc:</h2>
+            
+            <div id='ingrédients'>
+                <li> 100 g de crème liquide entière </li>
+                <li> 200 g de chocolat blanc</li>
+                <li> 180 g de crème liquide entière froide </li>
+            </div> 
+            
+            <h2> Préparation ganache: </h2>
+
+            <div class='instructions'>
+                <ol>
+                    <li> Cassez le chocolat blanc dans un saladier. </li>
+                    <li> Faire bouillir les 100 g de crème liquide. </li>
+                    <li> Une fois à ébullition, versez la crème en 3 fois sur le chocolat blanc et mélanger à l'aide d'une Maryse entre chaque ajout. Le chocolat doit être totalement fondu. </li>
+                    <li> Ajouter la crème liquide froide. </li>
+                    <li> Recouvrir la crème et la mettre au frais 2 heures. </li> 
+                    <li> Monter la crème au robot ou au batteur. </li>
+                </ol>
+            </div>
+
+            <h2> Montage: </h2>
+            <div class='astuces'>
+                <ol> Pocher de la ganache sur une première pâte sucrée et mettre des morceaux de fruits frais (et/ou coulis de fruits) au milieu du pochage. 
+		Recouvrir avec la deuxième pâte sucrée et pocher de la ganache (douille de votre choix en fonction de la décoration que vous voulez apporter) 
+		et décorer avec des fruits, des fleurs, décoration, etc. Laissez libre cours à votre imagination.
+                </ol>
+	    </div>
+            
+            <h2> Astuces: </h2>
+            <div class='astuces'>
+                <ol> L’idéal est de vous y prendre 2 heures avant pour bien laissée reposer la ganache et la pâte sucrée. </ol>
+                <ol> Vous pouvez remplacer la framboise par un autre fruit en fonction de vos goûts (fraise, cerise, fruit de la passion, ...).</ol>
+            </div>
+
+            <div class="container">
+				<img class='img' src= "/img/Lettercake.jpg" alt='Image Letter Cake'/>
+			</div>
+
+            <h2> <a href="/rpdf/Letter-Number Cake.pdf"> La recette au format PDF </a> </h2>
+        </main>
+    </body>
+
+	<script>
+	function toggleMenu() {
+		var menu = document.getElementById('pagesMenu');
+		if (menu.style.display === 'block') {
+		  menu.style.display = 'none';
+		} else {
+		  menu.style.display = 'block';
+		}
+	  }
+	</script>
+</html>
