@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>  Tiramisu </title>
+		<link rel="stylesheet" type = "text/css" href="../css/style.css" />
+	</head>
+
+	<body>
+		<header id="navbar">
+			<div id="logo">
+				<img src="../img/logo.png" alt="Logo SM_Pastry">
+			</div>
+			<nav id="nav-links">
+				<a href="../index.html"> Menu </a>
+				<a href="toutes tartes.html"> Recettes tartes </a>
+				<a href="pour le café.html"> Recettes pour le café </a>
+				<a href="petit déjeuner.html"> Recettes petit déjeuner </a>
+				<a href="au chocolat.html"> Recettes au chcocolat </a>
+				<a href="anniversaire.html">  Recettes anniversaire </a>
+				<a href="entremets.html"> Recettes entremets </a>
+				<a href="hors oeuvre.html"> Hors d'oeuvre </a>
+			</nav>
+			<div class="menuButton" onclick="toggleMenu()">☰</div>
+		</header>
+
+		<div id="pagesMenu">
+			<nav>
+				<a href="../index.html"> Menu </a>
+				<a href="toutes tartes.html"> Recettes tartes </a>
+				<a href="pour le café.html"> Recettes pour le café </a>
+				<a href="petit déjeuner.html"> Recettes petit déjeuner </a>
+				<a href="au chocolat.html"> Recettes au chcocolat </a>
+				<a href="anniversaire.html">  Recettes anniversaire </a>
+				<a href="entremets.html"> Recettes entremets </a>
+				<a href="hors oeuvre.html"> Hors d'oeuvre </a>
+			</nav>
+		</div>
+
+		<main id="content">   
+			<h1> Tiramisu </h1>
+
+			<table id="navigation">
+				<td> Temps total: ~15 minutes + 4 heures minimum </td>
+				<td> Temps de préparation: ~15 minutes</td>
+				<td> Repos: 4 heures </td>
+				<td> Quantité: 8 personnes </td>
+			</table>
+		
+			<h2> Ingrédients mousse mascarpone:</h2>
+		
+			<div id='ingrédients'>
+				<li> 500 g de mascarpone </li>
+				<li> 6 oeufs </li>
+				<li> 100 g de sucre blanc (ou sucre roux)</li>
+			</div>
+
+			<h2> Préparation mousse: </h2>
+
+			<div class='instructions'>
+				<ol>
+					<li> Séparer la blanc des jaunes d'oeufs. </li>
+					<li> Battre le sucre avec les jeunes d'oeufs energiquement, jusqu'à ce 
+						que le mélange blanchisse.</li>
+					<li> Ajouter la mascarpone.</li>
+					<li> Mélanger bien jusqu'à obtenir une préparation lisse.</li>
+					<li> Réserver le mékange au frais.</li>
+					<li> Monter les blancs en neige.</li>
+					<li> Incorporer délicatement les blancs en neige à la préparation précédente à l'aide d'une maryse.</li>
+				</ol>
+			</div>
+
+			<h2> Montage:</h2>
+		
+			<div id='ingrédients'>
+				<li> ~2 tasses de café</li>
+				<li> Biscuits boudoirs (nombre dépend de leur taille et de la taille de votre moule)</li>
+				<li> Mousse mascarpone</li>
+				<li> Cacao amer </li>
+			</div>
+
+			<h2> Montage</h2>
+		
+			<div class='astuces'>
+				<ol>Déposer des biscuits imbibés de café (imbibé rapidement, la biscuit ne doit pas devenir trop mou)
+					sur le fond du plat.</ol>
+				<ol>Recouvrir la première couche de biscuit d'une couche de crème mascarpone (~la moitié de la préparation).</ol>
+				<ol>Disposer une deuxième et dernière couche de biscuit boudoirs imbibés de café.</ol>
+				<ol>Recouvrir avec une dernière couche de mascarpone (donc avec la deuxième moitié de la préparation).</ol>
+				<ol>Placer au réfrigérateur pendant 4 heures minimum ( de préférence 24 heures) pour qu'il prenne au froid.</ol>
+				<ol>Avant de servir, saoupoudrer le tiramisu de cacao amer.</ol>
+			</div>
+		
+			<h2> Astuces: </h2>
+		
+			<div class='astuces'> 
+				<ol> Ajouter un peu d'extrait de vanille dans la mousse pour apporter plus de goût.</ol>
+				<ol> Ajouter une pincée de sel dans les blancs d'oeufs pour les monter en neige plus facilement et rapidement. </ol>
+			</div>
+
+			<div class="container">
+				<img  src= "../img/part_tiramisu.HEIC" alt="Photo d'une part de tiramisu" class="img"/>
+			</div>
+
+			<h2> <a href="../rpdf/tiramisu.pdf"> La recette au format PDF </a>
+		</main>
+	</body>
+	<script>
+	function toggleMenu() {
+		var menu = document.getElementById('pagesMenu');
+		if (menu.style.display === 'block') {
+		  menu.style.display = 'none';
+		} else {
+		  menu.style.display = 'block';
+		}
+	  }
+	</script>
+</html>
